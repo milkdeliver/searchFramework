@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <title>taobao demo</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+  <style type="text/css">
+    body {
+      font: 12px/1.5 tahoma, arial, sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    @font-face { font-family:iconfont; src:url(http://g.tbcdn.cn/tb/icon-font/1.1.5/iconfont.eot);}
+
+    .search-tip {
+      float: right;
+      margin-top: 5px;
+    }
+
+    .btn-search {
+      float: right;
+      width: 100px;
+      height: 45px;
+      background: #f40;
+      border: 0;
+      font-size: 20px;
+      color: #FAF6F5;
+      margin-right: 3px;
+      cursor: ${pointer};
+    }
+
+    .search-tip a {
+      color: #6c6c6c;
+    }
+    
+    .search-input {
+      background: #f40;
+      height: 45px;
+      overflow: hidden;
+      padding: 3px 0 3px 75px;
+    }
+
+    .search-input input {
+      height: 39px;
+      line-height: 39px;
+      width: 100%;
+      border: 0 none;
+      outline: 0;
+      padding: 0;
+      background: #fff;
+    }
+
+    .search-container {
+      position: relative;
+
+    }
+    .iconfont{
+      font-family: iconfont;
+      font-size: 16px; 
+      position: absolute;
+      left: 87px;
+      top: 8px;
+    }
+    
+    .search-list {
+      float: left;
+      position: absolute;
+      left: 3px;
+      top: 3px;
+      width: 72px;
+      height: 39px;
+      overflow: hidden;
+      background: #fff;
+      text-align: center;
+      border-left: 1px solid #f6f6f6;
+      border-right: 1px solid #e5e5e5;
+    }
+
+    .search-list ul {
+      list-style-type: none;
+      display: block;
+    }
+
+    .search-list li {
+      width: 72px;
+      height:39px;
+      line-height: 39px;
+      display: block;
+      /* background: #e8e8e8; */
+      font-size: 12px;
+    }
+
+    .search-list li a{
+      font-size: 16px;
+      text-decoration: none;
+      color: #ABB7C1;
+
+    }
+
+    ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <div class="search-list">
+      <ul>
+      	<li><a href="#">Items</a></li>
+      	<li><a href="#">Shops</a></li>
+      </ul>
+    </div>
+    <div class="search-pannel">
+      <form action="">
+        <div class="search-tip">
+        	<a href="#">
+        	  Advance <br> Search 
+        	</a>
+        </div>
+        <button class="btn-search" type="submit">Search</button>
+        <div class="search-input">
+        	<input type="text" x-webkit-speech="">
+          <i class="iconfont"></i>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
